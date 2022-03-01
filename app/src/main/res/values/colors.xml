@@ -11,4 +11,19 @@
     <color name="yellow">#DFF800</color>
     <color name="green">#41F300</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  Colors hypermedia  -->
+    <color name="darkblue">#232558</color>
+    <color name="lightblue">#6268AF</color>
+
+    <!--  Colors Buttons -->
+    <color name="buttondarkgrey">#545368</color>
+
+    <!--  Colors Menu -->
+    <color name="menu_orange">#F89501</color>
+    <color name="menu_red">#EB2B1E</color>
+    <color name="menu_green">#04C500</color>
+    <color name="menu_blue">#008AC5</color>
+
+
 </resources>
