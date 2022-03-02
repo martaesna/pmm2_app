@@ -131,18 +131,6 @@ public class LoginActivity extends AppCompatActivity {
                 loginViewModel.login(usernameEditText.getText().toString(), passwordEditText.getText().toString());
                 Intent intentMain = new Intent(LoginActivity.this , ChooseUserActivity.class);
                 LoginActivity.this.startActivity(intentMain);
-                Thread thread = new Thread(new Runnable() {
-                    public void run() {
-                        try {
-                            SSHConnection.executeRemoteCommand("pi", "mariomarta",  "192.168.43.37", 22);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-
-                thread.start();
-                //startActivity(new Intent(LoginActivity.this, ChooseUserActivity.class));
             }
 
         });

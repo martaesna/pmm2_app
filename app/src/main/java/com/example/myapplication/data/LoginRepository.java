@@ -6,6 +6,7 @@ import com.example.myapplication.data.model.Account;
 import com.example.myapplication.data.model.LoggedInUser;
 import com.example.myapplication.data.model.User;
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.commons.codec.digest.DigestUtils;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -51,10 +52,6 @@ public class LoginRepository {
     }
 
     public Result<LoggedInUser> login(String username, String password) {
-        Account account = new Account(username, password);
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
-        mDatabase.setValue(account);
-        System.out.println("hello");
         Result<LoggedInUser> result = dataSource.login(username, password);
         if (result instanceof Result.Success) {
             setLoggedInUser(((Result.Success<LoggedInUser>) result).getData());
