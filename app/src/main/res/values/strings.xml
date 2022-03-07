@@ -17,5 +17,8 @@
     <string name="silvia_button">Silvia</string>
     <string name="laia_button">Laia</string>
     <string name="help_comment">En cas de tenir algun problema, per favor posis en contacte amb e nostre servei d’ajuda - help@mail.com</string>
-
+    <string name="title_add">AFEGIR DISPOSITIU</string>
+    <string name="description_add">Acosti el dispositiu al lector, fins que s’encengui la llum verda</string>
+    <string name="button_add">Afegir</string>
+    <string name="back_button">Sortir</string>
 </resources>
