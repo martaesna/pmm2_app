@@ -17,7 +17,7 @@
     <color name="lightblue">#6268AF</color>
 
     <!--  Colors Buttons -->
-    <color name="buttondarkgrey">#545368</color>
+    <color name="button_dark_grey">#545368</color>
 
     <!--  Colors Menu -->
     <color name="menu_orange">#F89501</color>
