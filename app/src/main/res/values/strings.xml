@@ -16,4 +16,6 @@
     <string name="mario_button">Mario</string>
     <string name="silvia_button">Silvia</string>
     <string name="laia_button">Laia</string>
+    <string name="help_comment">En cas de tenir algun problema, per favor posis en contacte amb e nostre servei d’ajuda - help@mail.com</string>
+
 </resources>

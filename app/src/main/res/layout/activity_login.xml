@@ -13,14 +13,41 @@
     tools:context=".ui.login.LoginActivity">
 
 
-    <!--<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="64dp"
-        android:src="@drawable/button_login"
-        tools:ignore="MissingConstraints" />-->
+    <ImageButton
+        android:id="@+id/BotonCatala"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_catala"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/BotonEspañol"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="240dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_españa"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/BotonIngles"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="310dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_inglesa"
+        android:layout_marginTop="20dp" />
 
 
     <TextView
@@ -105,6 +132,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_comment"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
 
     <ProgressBar
         android:id="@+id/loading"

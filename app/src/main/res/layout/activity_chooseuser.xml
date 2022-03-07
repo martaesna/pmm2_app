@@ -9,7 +9,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/img_wallpaper"
     tools:context=".ui.chooseuser.ChooseUserActivity">
+
+
+
+    <ImageButton
+        android:id="@+id/BotonCatala"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_catala"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/BotonEspañol"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="240dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_españa"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/BotonIngles"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="310dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_inglesa"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
