@@ -127,7 +127,7 @@
         android:layout_marginBottom="176dp"
         android:width="340dp"
         android:height="100dp"
-        android:backgroundTint="@color/button_dark_grey"
+        android:backgroundTint="@color/lightblue"
         android:text="@string/action_sign_in"
         android:textColor="@color/white"
         android:textSize="36sp"
@@ -138,24 +138,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.2"
-        app:strokeColor="@color/white"
-        app:strokeWidth="2dp"
         tools:ignore="SmallSp" />
+    //app:strokeColor="@color/white"
+    app:strokeWidth="2dp"
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="383dp"
+        android:layout_height="115dp"
         android:gravity="bottom"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="718dp">
 
-        tools:ignore="MissingConstraints">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/help_comment"
-            android:textColor="#FFFFFF"
-            android:textSize="12sp" />
-
+            android:textColor="@color/grey_text"
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <ProgressBar

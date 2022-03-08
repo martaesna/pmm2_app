@@ -11,6 +11,8 @@
     <color name="yellow">#DFF800</color>
     <color name="green">#41F300</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey_text">#636599</color>
+
 
     <!--  Colors hypermedia  -->
     <color name="darkblue">#232558</color>
@@ -25,6 +27,11 @@
     <color name="menu_green">#04C500</color>
     <color name="menu_blue">#008AC5</color>
 
+    <!-- Colors Buttons -->
+    <color name="button_orange">#e69419</color>
+    <color name="button_red">#c72e32</color>
+    <color name="button_green">#31A55F</color>
+    background: #;
 
     <!--  Colors Menu -->
     <color name="text_yellow">#F8AB56</color>

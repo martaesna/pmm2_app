@@ -16,7 +16,7 @@
     <string name="mario_button">Mario</string>
     <string name="silvia_button">Silvia</string>
     <string name="laia_button">Laia</string>
-    <string name="help_comment">En cas de tenir algun problema, per favor posis en contacte amb e nostre servei d’ajuda - help@mail.com</string>
+    <string name="help_comment">En cas de tenir problemes, contacteu amb help@mail.com</string>
 
     <!-- Strings related to menu -->
     <string name="item">telefon</string>
@@ -38,7 +38,7 @@
 
 
     <!-- Strings related to configuration -->
-    <string name="title_configuration">CONFIGURACÍO</string>
+    <string name="title_configuration">CONFIGURACIÓ</string>
     <string name="change_name">CANVIAR NOM</string>
     <string name="add_user">AFEGIR USUARI</string>
     <string name="account">COMPTE</string>

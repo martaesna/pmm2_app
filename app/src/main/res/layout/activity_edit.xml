@@ -109,11 +109,11 @@
         android:fontFamily="@font/futura_medium"
         android:gravity="center"
         android:text="@string/description"
-        android:textColor="@color/white"
+        android:textColor="@color/button_dark_grey"
         android:textSize="36sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="303dp" />
+        tools:layout_editor_absoluteY="367dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -122,11 +122,12 @@
         android:layout_marginBottom="124dp"
         android:width="300dp"
         android:height="100dp"
-        android:backgroundTint="@color/menu_red"
+        android:backgroundTint="@color/button_orange"
         android:enabled="true"
-        android:text="@string/button_delete"
+        android:text="@string/button_edit"
         android:fontFamily="@font/futura_heavy"
         android:textSize="36sp"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -145,6 +146,7 @@
         android:enabled="true"
         android:text="@string/back_button"
         android:textSize="36sp"
+        app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"

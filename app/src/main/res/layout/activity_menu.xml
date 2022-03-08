@@ -12,8 +12,6 @@
     android:background="@drawable/img_wallpaper"
     tools:context=".ui.chooseuser.ChooseUserActivity">
 
-
-
     <ImageButton
         android:id="@+id/BotonCatala"
         android:layout_width="50dp"

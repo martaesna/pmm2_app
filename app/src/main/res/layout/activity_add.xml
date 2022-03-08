@@ -67,36 +67,37 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="149dp" />
 
+
+
     <View
         android:layout_width="310dp"
         android:layout_height="60dp"
         android:background="@color/white"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="185dp" />
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="236dp" />
 
     <EditText
         android:layout_width="303dp"
         android:layout_height="51dp"
-        android:hint="@string/input"
         android:fontFamily="@font/futura_light"
+        android:hint="@string/input"
         android:inputType="text"
         android:textSize="22sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="191dp"
-        tools:ignore="MissingConstraints" />
-
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="242dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/futura_medium"
         android:gravity="center"
         android:text="@string/description"
-        android:textColor="@color/white"
+        android:textColor="@color/button_dark_grey"
         android:textSize="36sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="279dp" />
+        tools:layout_editor_absoluteY="367dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -105,12 +106,13 @@
         android:layout_marginBottom="124dp"
         android:width="300dp"
         android:height="100dp"
-        android:backgroundTint="@color/menu_green"
+        android:backgroundTint="@color/button_green"
         android:enabled="true"
         android:text="@string/button_add"
         android:fontFamily="@font/futura_heavy"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,6 +128,7 @@
         android:backgroundTint="@color/button_dark_grey"
         android:fontFamily="@font/futura_heavy"
         android:enabled="true"
+        app:cornerRadius="5dp"
         android:text="@string/back_button"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
