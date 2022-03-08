@@ -50,7 +50,7 @@
         android:layout_width="420dp"
         android:layout_height="124dp"
         android:gravity="center"
-        android:text="@string/title_add"
+        android:text="@string/title_edit"
         android:textColor="@color/darkblue"
         android:textSize="40sp"
         tools:ignore="MissingConstraints"
@@ -72,19 +72,28 @@
         android:layout_height="60dp"
         android:background="@color/white"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="185dp" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="223dp" />
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="303dp"
-        android:layout_height="51dp"
+        android:layout_width="313dp"
+        android:layout_height="59dp"
         android:hint="@string/input"
         android:inputType="text"
         android:textSize="22sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="191dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <Spinner
+        android:layout_width="356dp"
+        android:layout_height="42dp"
+        android:dropDownSelector="@color/white"
+        android:spinnerMode="dropdown"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="166dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -94,8 +103,8 @@
         android:textColor="@color/white"
         android:textSize="36sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="262dp" />
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="290dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -104,9 +113,9 @@
         android:layout_marginBottom="124dp"
         android:width="300dp"
         android:height="100dp"
-        android:backgroundTint="@color/menu_green"
+        android:backgroundTint="@color/menu_orange"
         android:enabled="true"
-        android:text="@string/button_add"
+        android:text="@string/button_edit"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
