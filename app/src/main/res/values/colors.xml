@@ -19,11 +19,18 @@
     <!--  Colors Buttons -->
     <color name="button_dark_grey">#545368</color>
 
-    <!--  Colors Menu -->
+    <!--  Colors ChooseUser -->
     <color name="menu_orange">#F89501</color>
     <color name="menu_red">#EB2B1E</color>
     <color name="menu_green">#04C500</color>
     <color name="menu_blue">#008AC5</color>
 
 
+    <!--  Colors Menu -->
+    <color name="text_yellow">#F8AB56</color>
+    <color name="text_green">#00B062</color>
+    <color name="text_grey">#626161</color>
+
+    <!-- Strings related to configuration -->
+    <color name="surface_red">#AD1519</color>
 </resources>

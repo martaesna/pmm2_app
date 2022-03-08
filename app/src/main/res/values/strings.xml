@@ -17,6 +17,15 @@
     <string name="silvia_button">Silvia</string>
     <string name="laia_button">Laia</string>
     <string name="help_comment">En cas de tenir algun problema, per favor posis en contacte amb e nostre servei d’ajuda - help@mail.com</string>
+
+    <!-- Strings related to menu -->
+    <string name="item">telefon</string>
+    <string name="item1">cartera</string>
+    <string name="button_item_delete">Eliminar</string>
+    <string name="button_item_edit">Editar</string>
+    <string name="button_item_add">Afegir</string>
+
+    <!-- Strings related to add,edit,delete -->
     <string name="title_add">AFEGIR DISPOSITIU</string>
     <string name="description">Acosti el dispositiu al lector, fins que s’encengui la llum verda</string>
     <string name="button_add">AFEGIR</string>
@@ -26,4 +35,13 @@
     <string name="input">Escriu el nom del dispositiu</string>
     <string name="title_edit">EDITAR DISPOSITIU</string>
     <string name="button_edit">EDITAR</string>
+
+
+    <!-- Strings related to configuration -->
+    <string name="title_configuration">CONFIGURACÍO</string>
+    <string name="change_name">CANVIAR NOM</string>
+    <string name="add_user">AFEGIR USUARI</string>
+    <string name="account">COMPTE</string>
+    <string name="help">AJUDA</string>
+
 </resources>
