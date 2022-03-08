@@ -2,10 +2,10 @@
     <string name="app_name">Leave with all</string>
     <!-- Strings related to login -->
     <string name="title">LEAVE WITH ALL</string>
-    <string name="user_name">Nom del usuari</string>
-    <string name="prompt_email">Email</string>
+    <string name="user_name">Nom d\'usuari</string>
+    <string name="username_prompt">Escriu el nom d\'usuari</string>
     <string name="password">Contrasenya</string>
-    <string name="prompt_password">Password</string>
+    <string name="prompt_password">Escriu la contrassenya</string>
     <string name="action_sign_in">Login</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome "</string>
@@ -43,5 +43,9 @@
     <string name="add_user">AFEGIR USUARI</string>
     <string name="account">COMPTE</string>
     <string name="help">AJUDA</string>
+
+    <!-- Strings related to add user -->
+    <string name="new_user">Nou usuari</string>
+
 
 </resources>

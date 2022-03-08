@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@color/darkblue"
+    android:background="@color/lightblue"
     tools:context=".ui.login.LoginActivity">
 
 
@@ -53,7 +53,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title"
+        android:text="@string/add_user"
         android:textColor="@color/white"
         android:textSize="40sp"
         tools:ignore="MissingConstraints"
@@ -72,7 +72,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/user_name"
+        android:text="@string/new_user"
         android:textColor="@color/white"
         android:textSize="30sp"
         tools:ignore="MissingConstraints"
@@ -123,12 +123,35 @@
         android:layout_height="71dp"
         android:layout_gravity="start"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="176dp"
+        android:width="340dp"
+        android:height="100dp"
+        android:backgroundTint="@color/button_dark_grey"
+        android:enabled="false"
+        android:text="@string/back_button"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="240dp"
+        android:layout_height="71dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
         android:enabled="false"
         android:layout_marginBottom="176dp"
         android:width="340dp"
         android:height="100dp"
-        android:backgroundTint="@color/lightblue"
-        android:text="@string/action_sign_in"
+        android:backgroundTint="@color/button_green"
+        android:text="@string/button_add"
         android:textColor="@color/white"
         android:textSize="36sp"
         app:cornerRadius="5dp"
@@ -139,39 +162,5 @@
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.2"
         tools:ignore="SmallSp" />
-    //app:strokeColor="@color/white"
-    app:strokeWidth="2dp"
-
-    <RelativeLayout
-        android:layout_width="383dp"
-        android:layout_height="115dp"
-        android:gravity="bottom"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="718dp">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/help_comment"
-            android:textColor="@color/grey_text"
-            android:textSize="20sp" />
-    </RelativeLayout>
-
-    <ProgressBar
-        android:id="@+id/loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="64dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
