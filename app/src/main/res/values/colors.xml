@@ -40,4 +40,8 @@
 
     <!-- Strings related to configuration -->
     <color name="surface_red">#AD1519</color>
+
+    <!-- Strings related to help -->
+    <color name="background_blue">#6268AF</color>
+
 </resources>

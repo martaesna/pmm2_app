@@ -48,4 +48,10 @@
     <string name="new_user">Nou usuari</string>
 
 
+    <!-- Strings related to help -->
+    <string name="title_help">AJUDA</string>
+    <string name="text_help">Si necessites ajuda amb l’aplicació o el desenvolupament de l’activitat del producte, no dubtis a contactar amb nosaltres trucant al +34 696634466 o escriure un correu electronic  a help@mail.com.
+        T’atendrem el més aviat possible.</string>
+
+
 </resources>

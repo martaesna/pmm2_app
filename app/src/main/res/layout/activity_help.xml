@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background_blue">
+
+    <ImageButton
+        android:id="@+id/BotonCatala"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_catala"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/BotonEspañol"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="240dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_españa"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/BotonIngles"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="310dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_inglesa"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="420dp"
+        android:layout_height="124dp"
+        android:gravity="center"
+        android:text="@string/title_help"
+        android:fontFamily="@font/futura_heavy"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-125dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <View
+        android:layout_width="365dp"
+        android:layout_height="1dip"
+        android:layout_marginEnd="1dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="149dp" />
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_medium"
+        android:text="@string/text_help"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="71dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="36dp"
+        android:width="300dp"
+        android:height="100dp"
+        android:backgroundTint="@color/button_dark_grey"
+        android:fontFamily="@font/futura_heavy"
+        android:enabled="true"
+        android:text="@string/back_button"
+        android:textSize="36sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
