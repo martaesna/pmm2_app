@@ -167,7 +167,7 @@
         android:height="100dp"
         android:backgroundTint="@color/button_green"
         android:enabled="false"
-        android:text="@string/button_add"
+        android:text="@string/button_edit"
         android:textColor="@color/white"
         android:textSize="36sp"
         app:cornerRadius="5dp"
