@@ -67,41 +67,30 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="149dp" />
 
-    <View
-        android:layout_width="310dp"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="239dp" />
 
     <EditText
         android:layout_width="303dp"
         android:layout_height="51dp"
         android:hint="@string/input"
+        android:fontFamily="@font/futura_light"
+        android:background="@drawable/rectangle_login_textedit"
         android:inputType="text"
-        android:textSize="22sp"
+        android:textSize="25sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="240dp" />
 
-    <View
-        android:layout_width="310dp"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="166dp" />
-
     <TextView
         android:layout_width="303dp"
         android:layout_height="51dp"
+        android:background="@drawable/rectangle_login_textedit"
         android:fontFamily="@font/futura_light"
+        android:gravity="left|center"
         android:text="@string/dispositiu"
-        android:textSize="22sp"
+        android:textSize="25sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="182dp" />
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="177dp" />
 
     <TextView
         android:layout_width="wrap_content"

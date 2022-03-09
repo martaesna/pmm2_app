@@ -68,25 +68,20 @@
         tools:layout_editor_absoluteY="149dp" />
 
 
-
-    <View
-        android:layout_width="310dp"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="236dp" />
-
     <EditText
         android:layout_width="303dp"
         android:layout_height="51dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/rectangle_login_textedit"
         android:fontFamily="@font/futura_light"
         android:hint="@string/input"
         android:inputType="text"
-        android:textSize="22sp"
-        tools:ignore="MissingConstraints"
+        android:textSize="25sp"
+        android:selectAllOnFocus="true"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="242dp" />
+        tools:layout_editor_absoluteY="201dp"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

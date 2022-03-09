@@ -5,11 +5,11 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightblue"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@color/darkblue"
     tools:context=".ui.login.LoginActivity">
 
 
@@ -17,43 +17,43 @@
         android:id="@+id/BotonCatala"
         android:layout_width="50dp"
         android:layout_height="34dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:layout_marginLeft="170dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/img_catala"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/BotonEspañol"
         android:layout_width="50dp"
         android:layout_height="34dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="20dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:layout_marginLeft="240dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/img_españa"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/BotonIngles"
         android:layout_width="50dp"
         android:layout_height="34dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="20dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:layout_marginLeft="310dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/img_inglesa"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title"
+        android:text="@string/account"
         android:textColor="@color/white"
         android:fontFamily="@font/futura_heavy"
         android:textSize="40sp"
@@ -74,8 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/user_name"
-        android:textColor="@color/white"
         android:fontFamily="@font/futura_medium"
+        android:textColor="@color/white"
         android:textSize="30sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
@@ -86,10 +86,12 @@
         android:layout_width="350dp"
         android:layout_height="51dp"
         android:layout_marginTop="286dp"
-        android:hint="@string/username_prompt"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
         android:background="@drawable/rectangle_login_textedit"
+        android:hint="@string/hauria de ser l'actual"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:fontFamily="@font/futura_light"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -97,84 +99,90 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/password"
-        android:textColor="@color/white"
         android:fontFamily="@font/futura_medium"
+        android:text="@string/current_password"
+        android:textColor="@color/white"
         android:textSize="30sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="360dp" />
+        tools:layout_editor_absoluteY="369dp" />
 
     <EditText
-        android:id="@+id/password"
         android:layout_width="350dp"
         android:layout_height="51dp"
         android:layout_marginTop="80dp"
+        android:background="@drawable/rectangle_login_textedit"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
+        android:fontFamily="@font/futura_light"
+        android:textSize="25sp"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
-        android:background="@drawable/rectangle_login_textedit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_medium"
+        android:text="@string/new_password"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="495dp" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/rectangle_login_textedit"
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:fontFamily="@font/futura_light"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
     <Button
-        android:id="@+id/login"
+        android:fontFamily="@font/futura_heavy"
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"
-        android:layout_marginTop="16dp"
-        android:enabled="false"
-        android:layout_marginBottom="176dp"
         android:width="340dp"
         android:height="100dp"
-        android:backgroundTint="@color/lightblue"
-        android:text="@string/action_sign_in"
-        android:fontFamily="@font/futura_heavy"
+        android:backgroundTint="@color/button_dark_grey"
+        android:enabled="false"
+        android:text="@string/back_button"
         android:textColor="@color/white"
         android:textSize="36sp"
         app:cornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.2"
-        tools:ignore="SmallSp" />
+        tools:ignore="MissingConstraints,SmallSp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="734dp" />
 
-    <RelativeLayout
-        android:layout_width="383dp"
-        android:layout_height="115dp"
-        android:gravity="bottom"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="718dp">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/help_comment"
-            android:textColor="@color/grey_text"
-            android:fontFamily="@font/futura_medium"
-            android:textSize="20sp" />
-    </RelativeLayout>
-
-    <ProgressBar
-        android:id="@+id/loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="64dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/password"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+    <Button
+        android:fontFamily="@font/futura_heavy"
+        android:layout_width="240dp"
+        android:layout_height="71dp"
+        android:layout_gravity="start"
+        android:width="340dp"
+        android:height="100dp"
+        android:backgroundTint="@color/button_green"
+        android:enabled="false"
+        android:text="@string/button_edit"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:cornerRadius="5dp"
+        tools:ignore="MissingConstraints,SmallSp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="634dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
