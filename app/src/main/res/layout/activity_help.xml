@@ -69,16 +69,16 @@
 
 
     <TextView
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="337dp"
+        android:layout_height="473dp"
         android:fontFamily="@font/futura_medium"
+        android:justificationMode="inter_word"
         android:text="@string/text_help"
         android:textColor="@color/white"
         android:textSize="30sp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="207dp" />
-
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="186dp" />
 
     <Button
         android:layout_width="300dp"
