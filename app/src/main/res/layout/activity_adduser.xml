@@ -34,7 +34,7 @@
         android:layout_marginLeft="240dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img_españa"
+        android:src="@drawable/img_spain"
         android:layout_marginTop="20dp" />
 
     <ImageButton
@@ -161,6 +161,7 @@
         tools:layout_editor_absoluteY="734dp" />
 
     <Button
+        android:id="@+id/addUserButton"
         android:fontFamily="@font/futura_heavy"
         android:layout_width="240dp"
         android:layout_height="71dp"
@@ -176,5 +177,12 @@
         tools:ignore="MissingConstraints,SmallSp"
         tools:layout_editor_absoluteX="72dp"
         tools:layout_editor_absoluteY="634dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="DuplicateIds,SmallSp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

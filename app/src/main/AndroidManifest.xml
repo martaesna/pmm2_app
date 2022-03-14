@@ -19,7 +19,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.chooseuser.ChooseUserActivity" />
+        <activity android:name=".ui.chooseuser.ChooseUserActivity"
+            android:parentActivityName=".ui.login.LoginActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.menu.MenuActivity"
+            android:parentActivityName=".ui.chooseuser.ChooseUserActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.configuration.ConfigurationActivity"
+            android:parentActivityName=".ui.menu.MenuActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.editprofile.EditProfileActivity"
+            android:parentActivityName=".ui.configuration.ConfigurationActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.editaccount.EditAccountActivity"
+            android:parentActivityName=".ui.configuration.ConfigurationActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.adduser.AddUserActivity"
+            android:parentActivityName=".ui.configuration.ConfigurationActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.help.HelpActivity"
+            android:parentActivityName=".ui.configuration.ConfigurationActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.add.AddActivity"
+            android:parentActivityName=".ui.menu.MenuActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.delete.DeleteActivity"
+            android:parentActivityName=".ui.menu.MenuActivity"
+            android:exported="true"> </activity>
+        <activity android:name=".ui.edit.EditActivity"
+            android:parentActivityName=".ui.menu.MenuActivity"
+            android:exported="true"> </activity>
     </application>
 
 </manifest>

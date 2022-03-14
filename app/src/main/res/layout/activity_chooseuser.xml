@@ -35,7 +35,7 @@
         android:layout_marginLeft="240dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img_españa"
+        android:src="@drawable/img_spain"
         android:layout_marginTop="20dp" />
 
     <ImageButton
@@ -50,24 +50,6 @@
         android:src="@drawable/img_inglesa"
         android:layout_marginTop="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:textColor="@color/darkblue"
-        android:textSize="40sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="135dp" />
-
-    <View
-        android:layout_width="365dp"
-        android:layout_height="1dip"
-        android:layout_marginEnd="0dp"
-        android:background="@color/darkblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="199dp" />
 
     <Button
         android:id="@+id/martaButton"
@@ -76,7 +58,7 @@
         android:layout_gravity="start"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="490dp"
-        android:enabled="true"
+        android:enabled="false"
         android:text="@string/marta_button"
         android:width="300dp"
         android:height="100dp"

@@ -31,7 +31,7 @@
         android:layout_marginLeft="240dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/img_españa"
+        android:src="@drawable/img_spain"
         android:layout_marginTop="20dp" />
 
     <ImageButton
@@ -67,6 +67,13 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="149dp" />
 
+    <View
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="239dp" />
 
     <EditText
         android:layout_width="303dp"
@@ -80,14 +87,15 @@
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="240dp" />
 
+
     <TextView
         android:layout_width="303dp"
         android:layout_height="51dp"
         android:background="@drawable/rectangle_login_textedit"
         android:fontFamily="@font/futura_light"
         android:gravity="left|center"
-        android:text="@string/dispositiu"
         android:textSize="25sp"
+        android:text="@string/m_bil"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="177dp" />
@@ -105,6 +113,7 @@
         tools:layout_editor_absoluteY="367dp" />
 
     <Button
+        android:id="@+id/editButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -124,6 +133,7 @@
         tools:ignore="SmallSp" />
 
     <Button
+        android:id="@+id/sortir5"
         android:layout_width="300dp"
         android:layout_height="71dp"
         android:layout_gravity="start"

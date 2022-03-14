@@ -33,7 +33,7 @@
         android:layout_marginTop="20dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:src="@drawable/img_españa"
+        android:src="@drawable/img_spain"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,7 +87,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="286dp"
         android:background="@drawable/rectangle_login_textedit"
-        android:hint="@string/hauria de ser l'actual"
+        android:hint="@string/help"
         android:inputType="text"
         android:selectAllOnFocus="true"
         android:fontFamily="@font/futura_light"
@@ -169,6 +169,7 @@
         tools:layout_editor_absoluteY="734dp" />
 
     <Button
+        android:id="@+id/editAccountButton"
         android:fontFamily="@font/futura_heavy"
         android:layout_width="240dp"
         android:layout_height="71dp"

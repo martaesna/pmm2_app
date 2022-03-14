@@ -24,6 +24,7 @@ import com.example.myapplication.data.SSHConnection;
 import com.example.myapplication.databinding.ActivityChooseuserBinding;
 import com.example.myapplication.databinding.ActivityLoginBinding;
 import com.example.myapplication.ui.login.LoginActivity;
+import com.example.myapplication.ui.menu.MenuActivity;
 import com.jcraft.jsch.ChannelExec;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
@@ -35,7 +36,6 @@ import java.util.Properties;
 public class ChooseUserActivity extends AppCompatActivity {
 
     private ActivityChooseuserBinding binding;
-    TextView hola;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,47 +45,38 @@ public class ChooseUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chooseuser);
         binding = ActivityChooseuserBinding.inflate(getLayoutInflater());
 
-        final Button martaButton = binding.martaButton;
+        final Button martaButton = findViewById(R.id.martaButton);
         martaButton.setEnabled(true);
-        martaButton.setClickable(true);
+        final Button marioButton = findViewById(R.id.marioButton);
+        final Button laiaButton = findViewById(R.id.laiaButton);
+        final Button silviaButton = findViewById(R.id.silviaButton);
 
-        final Button marioButton = binding.marioButton;
-        marioButton.setEnabled(true);
-        marioButton.setClickable(true);
-
-        final Button laiaButton = binding.laiaButton;
-        laiaButton.setEnabled(true);
-        laiaButton.setClickable(true);
-
-        final Button silviaButton = binding.silviaButton;
-        silviaButton.setEnabled(true);
-        silviaButton.setClickable(true);
 
         martaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ChooseUserActivity.this.startActivity(new Intent(ChooseUserActivity.this, MenuActivity.class));
             }
         });
 
         marioButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ChooseUserActivity.this.startActivity(new Intent(ChooseUserActivity.this, MenuActivity.class));
             }
         });
 
         laiaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ChooseUserActivity.this.startActivity(new Intent(ChooseUserActivity.this, MenuActivity.class));
             }
         });
 
         silviaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ChooseUserActivity.this.startActivity(new Intent(ChooseUserActivity.this, MenuActivity.class));
             }
         });
 

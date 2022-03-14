@@ -74,6 +74,8 @@
 o escrivint un correu electronic a
 <b>help@mail.com</b>.
 T’atendrem el més aviat possible.</string>
+    <string name="m_bil">Mòbil</string>
+    <string name="prompt_email">hola@hola.com</string>
 
 
 </resources>
