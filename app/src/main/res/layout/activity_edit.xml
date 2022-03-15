@@ -54,9 +54,13 @@
         android:fontFamily="@font/futura_heavy"
         android:textColor="@color/darkblue"
         android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-25dp"
-        tools:layout_editor_absoluteY="61dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="534dp" />
 
     <View
         android:layout_width="365dp"
@@ -64,28 +68,45 @@
         android:layout_marginEnd="16dp"
         android:background="@color/darkblue"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="149dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="564dp"/>
 
     <View
-        android:layout_width="310dp"
-        android:layout_height="60dp"
+        android:layout_width="303dp"
+        android:layout_height="51dp"
         android:background="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="239dp" />
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="404dp"
+        android:gravity="left|center"
+        android:text="@string/m_bil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"/>
 
     <EditText
         android:layout_width="303dp"
         android:layout_height="51dp"
-        android:hint="@string/input"
         android:fontFamily="@font/futura_light"
         android:background="@drawable/rectangle_login_textedit"
         android:inputType="text"
         android:textSize="25sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="240dp" />
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="404dp"
+        android:gravity="left|center"
+        android:hint="@string/input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
@@ -96,21 +117,31 @@
         android:gravity="left|center"
         android:textSize="25sp"
         android:text="@string/m_bil"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="177dp" />
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="464dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="226dp"
         android:fontFamily="@font/futura_medium"
         android:gravity="center"
         android:text="@string/description"
         android:textColor="@color/button_dark_grey"
         android:textSize="36sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="367dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/editButton"

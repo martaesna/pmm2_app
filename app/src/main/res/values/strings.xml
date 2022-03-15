@@ -19,7 +19,7 @@
     <string name="help_comment">En cas de tenir problemes, contacteu amb <b>help@mail.com</b></string>
 
     <!-- Strings related to menu -->
-    <string name="item">telefon</string>
+    <string name="item">telèfon</string>
     <string name="item1">cartera</string>
     <string name="button_item_delete">Eliminar</string>
     <string name="button_item_edit">Editar</string>
@@ -32,20 +32,21 @@
     <string name="back_button">Sortir</string>
     <string name="title_delete">ELIMINAR DISPOSITIU</string>
     <string name="button_delete">ELIMINAR</string>
-    <string name="input">Escriu el nom del dispositiu</string>
+    <string name="input">Canvi el nom del dispositiu</string>
     <string name="title_edit">EDITAR DISPOSITIU</string>
     <string name="button_edit">EDITAR</string>
 
 
     <!-- Strings related to configuration -->
     <string name="title_configuration">CONFIGURACIÓ</string>
-    <string name="change_name">EDITAR PERFIL</string>
+    <string name="change_name">CANVIAR NOM</string>
     <string name="add_user">CREAR PERFIL</string>
     <string name="account">EDITAR COMPTE</string>
     <string name="help">AJUDA</string>
 
     <!-- Strings related to add user, edit account and edit profile -->
     <string name="new_user">Nou usuari</string>
+    <string name="new_user_name">Nou nom de usuari</string>
     <string name="new_password">Nova contrasenya</string>
     <string name="current_password">Contrasenya actual</string>
     <string name="color">Color</string>
@@ -74,7 +75,7 @@
 o escrivint un correu electronic a
 <b>help@mail.com</b>.
 T’atendrem el més aviat possible.</string>
-    <string name="m_bil">Mòbil</string>
+    <string name="m_bil">Telèfon</string>
     <string name="prompt_email">hola@hola.com</string>
 
 

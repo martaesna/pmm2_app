@@ -53,13 +53,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="580dp"
+        android:fontFamily="@font/futura_heavy"
         android:text="@string/change_name"
         android:textColor="@color/white"
-        android:fontFamily="@font/futura_heavy"
         android:textSize="40sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:layout_width="365dp"
@@ -67,113 +71,115 @@
         android:layout_marginEnd="0dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="199dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textColor="@color/white"
-        android:fontFamily="@font/futura_medium"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="240dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="564dp" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="350dp"
         android:layout_height="51dp"
-        android:layout_marginTop="286dp"
-        android:hint="@string/help"
-        android:textSize="25sp"
-        android:inputType="text"
-        android:fontFamily="@font/futura_light"
-        android:selectAllOnFocus="true"
+        android:layout_marginTop="244dp"
         android:background="@drawable/rectangle_login_textedit"
+        android:fontFamily="@font/futura_light"
+        android:hint="@string/name_prompt"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="468dp"
         android:fontFamily="@font/futura_medium"
-        android:text="@string/color"
+        android:text="@string/name_prompt"
         android:textColor="@color/white"
         android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
-    <RelativeLayout
-        android:id="@+id/spinnerLayout"
+    <EditText
         android:layout_width="350dp"
         android:layout_height="51dp"
-        android:layout_alignParentTop="true"
-        android:layout_weight=".28"
+        android:layout_marginTop="384dp"
         android:background="@drawable/rectangle_login_textedit"
-        android:gravity="center"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="419dp">
-
-        <Spinner
-            android:layout_width="350dp"
-            android:layout_height="51dp"
-            android:background="@drawable/rectangle_login_textedit"
-            android:color="@color/darkblue"
-            android:fontFamily="@font/futura_light"
-            android:imeActionLabel="@string/action_sign_in_short"
-            android:imeOptions="actionDone"
-            android:inputType="textPassword"
-            android:selectAllOnFocus="true"
-            android:textSize="25sp" />
-
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/down_arrow_outline"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
-
-    <Button
-        android:fontFamily="@font/futura_heavy"
-        android:layout_width="240dp"
-        android:layout_height="71dp"
-        android:layout_gravity="start"
-        android:width="340dp"
-        android:height="100dp"
-        android:backgroundTint="@color/button_dark_grey"
-        android:enabled="false"
-        android:text="@string/back_button"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        app:cornerRadius="5dp"
-        tools:ignore="MissingConstraints,SmallSp"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="734dp" />
+        android:fontFamily="@font/futura_light"
+        android:hint="@string/prompt_password"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/editProfileButton"
-        android:fontFamily="@font/futura_heavy"
         android:layout_width="240dp"
         android:layout_height="71dp"
-        android:layout_gravity="start"
+        android:layout_gravity="center"
+        android:layout_marginBottom="164dp"
         android:width="340dp"
         android:height="100dp"
         android:backgroundTint="@color/button_green"
         android:enabled="false"
+        android:fontFamily="@font/futura_heavy"
         android:text="@string/button_edit"
         android:textColor="@color/white"
         android:textSize="36sp"
         app:cornerRadius="5dp"
-        tools:ignore="MissingConstraints,SmallSp"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="634dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="68dp"
+        android:width="340dp"
+        android:height="100dp"
+        android:backgroundTint="@color/button_dark_grey"
+        android:enabled="false"
+        android:fontFamily="@font/futura_heavy"
+        android:text="@string/back_button"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="328dp"
+        android:fontFamily="@font/futura_medium"
+        android:text="@string/current_password"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -50,81 +50,70 @@
         android:src="@drawable/img_inglesa"
         android:layout_marginTop="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_configuration"
-        android:textColor="@color/darkblue"
-        android:textSize="40sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="135dp" />
-
     <View
         android:layout_width="365dp"
         android:layout_height="1dip"
         android:layout_marginEnd="0dp"
         android:background="@color/darkblue"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="199dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="564dp" />
 
-    <Button
-        android:id="@+id/changeName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="530dp"
-        android:enabled="true"
-        android:text="@string/change_name"
-        android:textSize="25dp"
-        android:width="300dp"
-        android:height="80dp"
-        android:backgroundTint="@color/darkblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.2"
-        tools:ignore="SmallSp" />
-
-
-    <Button
-        android:id="@+id/addUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="440dp"
-        android:enabled="true"
-        android:text="@string/add_user"
-        android:textSize="25dp"
-        android:width="300dp"
-        android:height="80dp"
-        android:backgroundTint="@color/darkblue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.2"
-        tools:ignore="SmallSp" />
 
     <Button
         android:id="@+id/account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="350dp"
-        android:enabled="true"
-        android:text="@string/account"
-        android:textSize="25dp"
+        android:layout_marginBottom="272dp"
         android:width="300dp"
         android:height="80dp"
         android:backgroundTint="@color/darkblue"
+        android:enabled="true"
+        android:text="@string/account"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:layout_width="420dp"
+        android:layout_height="124dp"
+        android:gravity="center"
+        android:text="@string/title_configuration"
+        android:fontFamily="@font/futura_heavy"
+        android:textColor="@color/darkblue"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="534dp"/>
+
+    <Button
+        android:id="@+id/changeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="452dp"
+        android:width="300dp"
+        android:height="80dp"
+        android:backgroundTint="@color/darkblue"
+        android:enabled="true"
+        android:text="@string/change_name"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SmallSp" />
 
     <Button
@@ -132,18 +121,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="260dp"
-        android:enabled="true"
-        android:text="@string/help"
-        android:textSize="25dp"
+        android:layout_marginBottom="184dp"
         android:width="300dp"
         android:height="80dp"
         android:backgroundTint="@color/surface_red"
+        android:enabled="true"
+        android:text="@string/help"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/addUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="364dp"
+        android:width="300dp"
+        android:height="80dp"
+        android:backgroundTint="@color/darkblue"
+        android:enabled="true"
+        android:text="@string/add_user"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SmallSp" />
 
     <Button

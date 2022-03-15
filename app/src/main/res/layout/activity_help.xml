@@ -47,38 +47,50 @@
         android:layout_marginTop="20dp" />
 
     <TextView
+        android:text="@string/help"
+        android:textColor="@color/white"
         android:layout_width="420dp"
         android:layout_height="124dp"
         android:gravity="center"
-        android:text="@string/title_help"
         android:fontFamily="@font/futura_heavy"
-        android:textColor="@color/white"
         android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-125dp"
-        tools:layout_editor_absoluteY="61dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="534dp" />
 
     <View
         android:layout_width="365dp"
         android:layout_height="1dip"
-        android:layout_marginEnd="1dp"
-        android:background="@color/white"
+        android:layout_marginEnd="0dp"
+        android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="149dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="564dp" />
 
 
     <TextView
         android:layout_width="337dp"
         android:layout_height="473dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="72dp"
         android:fontFamily="@font/futura_medium"
         android:justificationMode="inter_word"
         android:text="@string/text_help"
         android:textColor="@color/white"
         android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="186dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/helpButton"

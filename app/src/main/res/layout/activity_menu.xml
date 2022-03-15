@@ -53,75 +53,106 @@
         android:id="@+id/ButtonConfig"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="76dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:layout_marginLeft="300dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/img_config_item"
-        android:layout_marginTop="220dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/myRectangleView"
+        android:id = "@+id/telefon"
         android:layout_width="330dp"
         android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="506dp"
         android:background="@drawable/rectangle_login_textedit"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="280dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:layout_width="413dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="506dp"
         android:gravity="center"
         android:text="@string/item"
         android:textColor="@color/darkblue"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-18dp"
-        tools:layout_editor_absoluteY="280dp" />
+        tools:layout_editor_absoluteY="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <View
-        android:id="@+id/myRectangleView1"
+        android:id="@+id/cartera"
         android:layout_width="330dp"
         android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="446dp"
         android:background="@drawable/rectangle_login_textedit"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:layout_width="413dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="446dp"
         android:gravity="center"
         android:text="@string/item1"
         android:textColor="@color/darkblue"
         android:textSize="30sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-18dp"
-        tools:layout_editor_absoluteY="340dp" />
+        tools:layout_editor_absoluteY="340dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
     <View
         android:id="@+id/myRectangleDelete"
         android:layout_width="146dp"
         android:layout_height="121dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="284dp"
         android:background="@drawable/rectangle_login_textedit"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="420dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"/>
 
     <ImageButton
         android:id="@+id/BotonDelete"
         android:layout_width="55dp"
         android:layout_height="67dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="308dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:layout_marginLeft="75dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/img_eliminar_item"
-        android:layout_marginTop="430dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="100dp"
@@ -130,73 +161,96 @@
         android:text="@string/button_item_delete"
         android:textColor="@color/text_grey"
         android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="500dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="284dp"/>
 
     <View
         android:id="@+id/myRectangleEdit"
         android:layout_width="146dp"
         android:layout_height="121dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="284dp"
         android:background="@drawable/rectangle_login_textedit"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="420dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/BotonEdit"
         android:layout_width="55dp"
         android:layout_height="70dp"
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="308dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:layout_marginLeft="255dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/img_editar_item"
-        android:layout_marginTop="430dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="280dp"
         android:gravity="center"
         android:text="@string/button_item_edit"
         android:textColor="@color/text_yellow"
         android:textSize="25sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/myRectangleAdd"
         android:layout_width="146dp"
         android:layout_height="121dp"
         android:background="@drawable/rectangle_login_textedit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="570dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="144dp"/>
 
     <ImageButton
         android:id="@+id/BotonAdd"
         android:layout_width="65dp"
         android:layout_height="65dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="450dp"
         android:background="?selectableItemBackgroundBorderless"
         android:scaleType="fitXY"
-        android:layout_marginLeft="75dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/img_afegir_item"
-        android:layout_marginTop="580dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:gravity="center"
-        android:text="@string/button_item_edit"
+        android:text="@string/button_item_add"
         android:textColor="@color/text_green"
         android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="650dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="144dp" />
 
     <Button
         android:id="@+id/sortir"
