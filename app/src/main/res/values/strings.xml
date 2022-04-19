@@ -17,6 +17,7 @@
     <string name="silvia_button">Silvia</string>
     <string name="laia_button">Laia</string>
     <string name="help_comment">En cas de tenir problemes, contacteu amb <b>help@mail.com</b></string>
+    <string name="hire_comment">Encara no disposa dels nostres serveis? Contracta\'ns! <b>leavewithall@mail.com</b></string>
 
     <!-- Strings related to menu -->
     <string name="item">telèfon</string>
@@ -29,7 +30,8 @@
     <string name="title_add">AFEGIR DISPOSITIU</string>
     <string name="description">Acosti el dispositiu al lector, fins que s’encengui la llum verda</string>
     <string name="button_add">AFEGIR</string>
-    <string name="back_button">Sortir</string>
+    <string name="exit_button">SORTIR</string>
+    <string name="back_button">TORNAR</string>
     <string name="title_delete">ELIMINAR DISPOSITIU</string>
     <string name="button_delete">ELIMINAR</string>
     <string name="input">Canvi el nom del dispositiu</string>
@@ -58,7 +60,7 @@
         <item>Vermell</item>
         <item>Blau</item>
         <item>Lila</item>
-        <item>Marrò</item>
+        <item>Marró</item>
         <item>Taronja</item>
         <item>Groc</item>
         <item>Rosa</item>

@@ -1,9 +1,14 @@
 package com.example.myapplication.data;
 
+import static android.service.controls.ControlsProviderService.TAG;
+
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 
 import com.example.myapplication.data.model.Account;
 import com.example.myapplication.data.model.LoggedInUser;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.commons.codec.digest.DigestUtils;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,26 +27,31 @@ public class LoginDataSource {
     public Result<LoggedInUser> login(String username, String password) {
 
         try {
+            System.out.println("hola");
             ArrayList<Account> accounts = new ArrayList<>();
-            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
-            mDatabase.addValueEventListener(new ValueEventListener() {
+            final FirebaseDatabase database = FirebaseDatabase.getInstance();
+            DatabaseReference reference = database.getReference("accounts");
+
+            ValueEventListener accountsListener = new ValueEventListener() {
                 @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    for (DataSnapshot ds: snapshot.getChildren()) {
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    System.out.println("hola");
+                    for (DataSnapshot ds: dataSnapshot.getChildren()) {
                         Account account = ds.getValue(Account.class);
                         accounts.add(account);
                     }
                 }
 
                 @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-                    throw error.toException();
+                public void onCancelled(DatabaseError databaseError) {
+                    throw databaseError.toException();
                 }
-            });
+            };
+            reference.addValueEventListener(accountsListener);
 
-            String encript = DigestUtils.md5Hex(password);
+            String encrypt = DigestUtils.md5Hex(password);
             for (int i = 0; i < accounts.size(); i++) {
-                if (accounts.get(i).getName().equals(username) && accounts.get(i).getPassword().equals(encript)) {
+                if (accounts.get(i).getName().equals(username) && accounts.get(i).getPassword().equals(encrypt)) {
                     LoggedInUser newUser =
                             new LoggedInUser(
                                     java.util.UUID.randomUUID().toString(),

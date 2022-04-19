@@ -1,37 +1,22 @@
 package com.example.myapplication.ui.chooseuser;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.myapplication.R;
-import com.example.myapplication.data.SSHConnection;
+import com.example.myapplication.data.model.Account;
 import com.example.myapplication.databinding.ActivityChooseuserBinding;
-import com.example.myapplication.databinding.ActivityLoginBinding;
-import com.example.myapplication.ui.login.LoginActivity;
 import com.example.myapplication.ui.menu.MenuActivity;
-import com.jcraft.jsch.ChannelExec;
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.Session;
-
-import java.io.ByteArrayOutputStream;
-import java.util.Properties;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ChooseUserActivity extends AppCompatActivity {
 
@@ -45,11 +30,29 @@ public class ChooseUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chooseuser);
         binding = ActivityChooseuserBinding.inflate(getLayoutInflater());
 
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("accounts");
+        mDatabase.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot ds: snapshot.getChildren()) {
+                    Account account = ds.getValue(Account.class);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                throw error.toException();
+            }
+        });
+
         final Button martaButton = findViewById(R.id.martaButton);
         martaButton.setEnabled(true);
         final Button marioButton = findViewById(R.id.marioButton);
+        marioButton.setEnabled(true);
         final Button laiaButton = findViewById(R.id.laiaButton);
+        laiaButton.setEnabled(true);
         final Button silviaButton = findViewById(R.id.silviaButton);
+        silviaButton.setEnabled(true);
 
 
         martaButton.setOnClickListener(new View.OnClickListener() {

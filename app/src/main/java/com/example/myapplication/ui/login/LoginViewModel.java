@@ -4,12 +4,14 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import android.content.Intent;
 import android.util.Patterns;
 
 import com.example.myapplication.data.LoginRepository;
 import com.example.myapplication.data.Result;
 import com.example.myapplication.data.model.LoggedInUser;
 import com.example.myapplication.R;
+import com.example.myapplication.ui.chooseuser.ChooseUserActivity;
 
 public class LoginViewModel extends ViewModel {
 
@@ -29,16 +31,19 @@ public class LoginViewModel extends ViewModel {
         return loginResult;
     }
 
-    public void login(String username, String password) {
+    public void login(String username, String password, LoginActivity loginActivity) {
         // can be launched in a separate asynchronous job
-        Result<LoggedInUser> result = loginRepository.login(username, password);
-
-        if (result instanceof Result.Success) {
-            LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
-            loginResult.setValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
-        } else {
-            loginResult.setValue(new LoginResult(R.string.login_failed));
-        }
+        //Result<LoggedInUser> result = loginRepository.login(username, password);
+        //if (result instanceof Result.Success) {
+          //  LoggedInUser data = ((Result.Success<LoggedInUser>) result).getData();
+            //loginResult.setValue(new LoginResult(new LoggedInUserView(data.getDisplayName())));
+            Intent intentMain = new Intent(loginActivity , ChooseUserActivity.class);
+            loginActivity.startActivity(intentMain);
+        //} else {
+          //  Intent intentMain = new Intent(loginActivity , LoginActivity.class);
+            //loginActivity.startActivity(intentMain);
+            //loginResult.setValue(new LoginResult(R.string.login_failed));
+        //}
     }
 
     public void loginDataChanged(String username, String password) {

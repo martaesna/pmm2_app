@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -25,17 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
-import com.example.myapplication.data.SSHConnection;
 import com.example.myapplication.ui.chooseuser.ChooseUserActivity;
-import com.example.myapplication.ui.login.LoginViewModel;
-import com.example.myapplication.ui.login.LoginViewModelFactory;
 import com.example.myapplication.databinding.ActivityLoginBinding;
-import com.jcraft.jsch.ChannelExec;
-import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
-import com.jcraft.jsch.Session;
-
-import java.io.ByteArrayOutputStream;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -118,7 +108,7 @@ public class LoginActivity extends AppCompatActivity {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
                     loginViewModel.login(usernameEditText.getText().toString(),
-                            passwordEditText.getText().toString());
+                            passwordEditText.getText().toString(), LoginActivity.this);
                 }
                 return false;
             }
@@ -128,11 +118,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 loadingProgressBar.setVisibility(View.VISIBLE);
-                //loginViewModel.login(usernameEditText.getText().toString(), passwordEditText.getText().toString());
-                Intent intentMain = new Intent(LoginActivity.this , ChooseUserActivity.class);
-                LoginActivity.this.startActivity(intentMain);
+                loginViewModel.login(usernameEditText.getText().toString(), passwordEditText.getText().toString(), LoginActivity.this);
             }
-
         });
     }
 
