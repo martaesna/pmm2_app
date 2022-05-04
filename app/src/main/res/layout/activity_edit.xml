@@ -47,33 +47,32 @@
         android:layout_marginTop="20dp" />
 
     <TextView
-        android:layout_width="420dp"
-        android:layout_height="124dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="560dp"
+        android:fontFamily="@font/futura_heavy"
         android:gravity="center"
         android:text="@string/title_edit"
-        android:fontFamily="@font/futura_heavy"
         android:textColor="@color/darkblue"
-        android:textSize="35sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:layout_marginStart="14dp"
-        android:layout_marginBottom="534dp" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <View
         android:layout_width="365dp"
         android:layout_height="1dip"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="0dp"
         android:background="@color/darkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="564dp"/>
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="564dp" />
+
 
     <View
         android:layout_width="303dp"
@@ -87,8 +86,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
         android:layout_width="303dp"
@@ -105,9 +103,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:layout_width="303dp"
@@ -123,64 +119,63 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="206dp"
-        android:layout_marginBottom="226dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="246dp"
         android:fontFamily="@font/futura_medium"
         android:gravity="center"
         android:text="@string/description"
         android:textColor="@color/button_dark_grey"
-        android:textSize="36sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <Button
         android:id="@+id/editButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="71dp"
         android:layout_gravity="start"
         android:layout_marginBottom="124dp"
         android:width="300dp"
-        android:height="100dp"
+        android:height="60dp"
         android:backgroundTint="@color/button_orange"
         android:enabled="true"
         android:text="@string/button_edit"
-        android:fontFamily="@font/futura_heavy"
-        android:textSize="36sp"
-        app:cornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SmallSp" />
-
-    <Button
-        android:id="@+id/sortir5"
-        android:layout_width="300dp"
-        android:layout_height="71dp"
-        android:layout_gravity="start"
-        android:layout_marginBottom="36dp"
-        android:width="300dp"
-        android:height="100dp"
-        android:backgroundTint="@color/button_dark_grey"
-        android:fontFamily="@font/futura_heavy"
-        android:enabled="true"
-        android:text="@string/back_button"
-        android:textSize="36sp"
-        app:cornerRadius="5dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/button_orange"
+        app:strokeWidth="2dp"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/sortir2"
+        android:layout_width="240dp"
+        android:layout_height="71dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="36dp"
+        android:width="300dp"
+        android:height="60dp"
+        android:backgroundTint="@color/button_dark_grey"
+        android:enabled="true"
+        android:text="@string/back_button"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
         tools:ignore="SmallSp" />
 
 

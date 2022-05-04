@@ -43,17 +43,20 @@
     <string name="title_configuration">CONFIGURACIÓ</string>
     <string name="change_name">CANVIAR NOM</string>
     <string name="add_user">CREAR PERFIL</string>
-    <string name="account">EDITAR COMPTE</string>
+    <string name="account">CANVIAR CONTRASENYA</string>
+    <string name="user">TRIAR USUARI</string>
     <string name="help">AJUDA</string>
 
     <!-- Strings related to add user, edit account and edit profile -->
     <string name="new_user">Nou usuari</string>
-    <string name="new_user_name">Nou nom de usuari</string>
+    <string name="old_password">Contrasenya</string>
     <string name="new_password">Nova contrasenya</string>
     <string name="current_password">Contrasenya actual</string>
     <string name="color">Color</string>
     <string name="name">Nom</string>
-    <string name="name_prompt">Escriu el teu nom</string>
+    <string name="name_prompt">Nova contrasenya</string>
+    <string name="name_user">Nom usuari</string>
+    <string name="new_name_user">Nou nom usuari</string>
     <string-array name="colors_array">
         <item>Selecciona un color</item>
         <item>Verd</item>

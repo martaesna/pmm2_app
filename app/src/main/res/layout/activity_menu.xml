@@ -253,25 +253,23 @@
         android:layout_marginBottom="144dp" />
 
     <Button
-        android:id="@+id/sortir"
+        android:id="@+id/sortir2"
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="44dp"
-        android:width="340dp"
-        android:height="100dp"
+        android:layout_marginBottom="36dp"
+        android:width="300dp"
+        android:height="60dp"
         android:backgroundTint="@color/button_dark_grey"
         android:enabled="true"
         android:text="@string/back_button"
-        android:textSize="36sp"
-        app:cornerRadius="5dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/white"
-        app:strokeWidth="2dp"
-        tools:ignore="SmallSp" />
+        app:strokeWidth="2dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

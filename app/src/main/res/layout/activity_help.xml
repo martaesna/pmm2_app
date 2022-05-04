@@ -47,69 +47,65 @@
         android:layout_marginTop="20dp" />
 
     <TextView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="560dp"
+        android:fontFamily="@font/futura_heavy"
+        android:gravity="center"
         android:text="@string/help"
         android:textColor="@color/white"
-        android:layout_width="420dp"
-        android:layout_height="124dp"
-        android:gravity="center"
-        android:fontFamily="@font/futura_heavy"
-        android:textSize="35sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:layout_marginStart="14dp"
-        android:layout_marginBottom="534dp" />
+        tools:ignore="MissingConstraints" />
 
     <View
         android:layout_width="365dp"
         android:layout_height="1dip"
         android:layout_marginEnd="0dp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="70dp"
         android:layout_marginBottom="564dp" />
 
-
     <TextView
-        android:layout_width="337dp"
-        android:layout_height="473dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="72dp"
-        android:fontFamily="@font/futura_medium"
-        android:justificationMode="inter_word"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/futura_light"
+        android:gravity="left|center"
+        android:textSize="25sp"
         android:text="@string/text_help"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-        android:id="@+id/helpButton"
-        android:layout_width="300dp"
+        android:id="@+id/sortir2"
+        android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"
         android:layout_marginBottom="36dp"
         android:width="300dp"
-        android:height="100dp"
+        android:height="60dp"
         android:backgroundTint="@color/button_dark_grey"
-        android:fontFamily="@font/futura_heavy"
         android:enabled="true"
         android:text="@string/back_button"
-        android:textSize="36sp"
-        app:cornerRadius="5dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SmallSp" />
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

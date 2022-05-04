@@ -47,32 +47,31 @@
         android:layout_marginTop="20dp" />
 
     <TextView
-        android:layout_width="420dp"
-        android:layout_height="124dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="560dp"
+        android:fontFamily="@font/futura_heavy"
         android:gravity="center"
         android:text="@string/title_add"
-        android:fontFamily="@font/futura_heavy"
         android:textColor="@color/darkblue"
-        android:textSize="35sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:layout_marginStart="14dp"
-        android:layout_marginBottom="534dp" />
+        tools:ignore="MissingConstraints" />
 
     <View
         android:layout_width="365dp"
         android:layout_height="1dip"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="0dp"
         android:background="@color/darkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="70dp"
         android:layout_marginBottom="564dp" />
 
 

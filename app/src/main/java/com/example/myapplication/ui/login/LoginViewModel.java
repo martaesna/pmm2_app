@@ -12,6 +12,8 @@ import com.example.myapplication.data.Result;
 import com.example.myapplication.data.model.LoggedInUser;
 import com.example.myapplication.R;
 import com.example.myapplication.ui.chooseuser.ChooseUserActivity;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginViewModel extends ViewModel {
 
@@ -32,6 +34,10 @@ public class LoginViewModel extends ViewModel {
     }
 
     public void login(String username, String password, LoginActivity loginActivity) {
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
         // can be launched in a separate asynchronous job
         //Result<LoggedInUser> result = loginRepository.login(username, password);
         //if (result instanceof Result.Success) {

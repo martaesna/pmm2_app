@@ -31,8 +31,17 @@
         <entry key="app/src/main/res/drawable/rectangle_login_textedit.xml" value="0.125" />
         <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_add.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_adduser.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_chooseuser.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_configuration.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_delete.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_edit.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_editaccount.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_editprofile.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.29791666666666666" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.29791666666666666" />
       </map>
     </option>
   </component>
