@@ -1,14 +1,6 @@
 package com.example.myapplication.data;
 
-import android.util.Log;
-
-import com.example.myapplication.data.model.Account;
 import com.example.myapplication.data.model.LoggedInUser;
-import com.example.myapplication.data.model.User;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.crashlytics.buildtools.reloc.org.apache.commons.codec.digest.DigestUtils;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Class that requests authentication and user information from the remote data source and

@@ -61,6 +61,34 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="18dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="580dp"
+        android:fontFamily="@font/futura_medium"
+        android:text="@string/devices"
+        android:textColor="@color/darkblue"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/menull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingTop="100dp"
+        android:orientation="vertical"
+        android:scrollbarSize="25sp"
+        tools:ignore="MissingConstraints,RtlSymmetry">
+    </LinearLayout>
+
     <View
         android:id = "@+id/telefon"
         android:layout_width="330dp"
@@ -253,7 +281,7 @@
         android:layout_marginBottom="144dp" />
 
     <Button
-        android:id="@+id/sortir2"
+        android:id="@+id/sortir"
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"

@@ -75,12 +75,13 @@
 
 
     <EditText
+        android:id="@+id/new_device_name"
         android:layout_width="303dp"
         android:layout_height="51dp"
         android:layout_marginTop="240dp"
         android:background="@drawable/rectangle_login_textedit"
         android:fontFamily="@font/futura_light"
-        android:hint="@string/input"
+        android:hint="@string/new_device_name"
         android:inputType="text"
         android:textSize="25sp"
         android:selectAllOnFocus="true"
@@ -88,7 +89,6 @@
         android:layout_marginEnd="206dp"
         android:layout_marginBottom="464dp"
         android:gravity="left|center"
-        android:text="@string/m_bil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -101,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginEnd="200dp"
-        android:layout_marginBottom="246dp"
+        android:layout_marginBottom="348dp"
         android:fontFamily="@font/futura_medium"
         android:gravity="center"
         android:text="@string/description"
@@ -109,17 +109,15 @@
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="252dp"
         android:width="300dp"
         android:height="60dp"
         android:backgroundTint="@color/button_green"
@@ -128,14 +126,14 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="@color/button_green"
         app:strokeWidth="2dp"
         tools:ignore="SmallSp" />
 
     <Button
-        android:id="@+id/sortir2"
+        android:id="@+id/sortir4"
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"

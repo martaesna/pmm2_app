@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <Button
-        android:id="@+id/sortir2"
+        android:id="@+id/helpButton"
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"

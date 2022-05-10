@@ -64,7 +64,7 @@ public class ConfigurationActivity extends AppCompatActivity {
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ConfigurationActivity.this.startActivity(new Intent(ConfigurationActivity.this, LoginActivity.class));
+                ConfigurationActivity.this.startActivity(new Intent(ConfigurationActivity.this, MenuActivity.class));
             }
         });
 

@@ -29,13 +29,16 @@
 
     <!-- Strings related to add,edit,delete -->
     <string name="title_add">AFEGIR DISPOSITIU</string>
+    <string name="devices">DISPOSITIUS</string>
     <string name="description">Acosti el dispositiu al lector, fins que s’encengui la llum verda</string>
     <string name="button_add">AFEGIR</string>
+    <string name="button_adduser">AFEGIR NOU USUARI</string>
     <string name="exit_button">SORTIR</string>
     <string name="back_button">TORNAR</string>
     <string name="title_delete">ELIMINAR DISPOSITIU</string>
     <string name="button_delete">ELIMINAR</string>
     <string name="input">Canvi el nom del dispositiu</string>
+    <string name="new_device_name">Nom del nou dispositiu</string>
     <string name="title_edit">EDITAR DISPOSITIU</string>
     <string name="button_edit">EDITAR</string>
 

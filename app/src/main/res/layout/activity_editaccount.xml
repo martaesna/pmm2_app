@@ -145,7 +145,7 @@
 
 
     <Button
-        android:id="@+id/editButton"
+        android:id="@+id/editAccountButton"
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"

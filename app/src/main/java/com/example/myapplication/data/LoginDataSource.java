@@ -1,14 +1,7 @@
 package com.example.myapplication.data;
 
-import static android.service.controls.ControlsProviderService.TAG;
-
-import android.util.Log;
-
-import androidx.annotation.NonNull;
-
 import com.example.myapplication.data.model.Account;
 import com.example.myapplication.data.model.LoggedInUser;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.crashlytics.buildtools.reloc.org.apache.commons.codec.digest.DigestUtils;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

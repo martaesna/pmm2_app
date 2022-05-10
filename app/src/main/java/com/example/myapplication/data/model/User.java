@@ -1,25 +1,19 @@
 package com.example.myapplication.data.model;
 
+import java.util.ArrayList;
+
 public class User {
-    private String id;
     private String name;
-    private String username;
     private String color;
+    private ArrayList<Device> devices;
 
-    public User (String id, String name, String username, String color) {
-        this.id = id;
+    public User(String name, String color, ArrayList<Device> devices) {
         this.name = name;
-        this.username = username;
         this.color = color;
+        this.devices = devices;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    public User() {}
 
     public String getName() {
         return name;
@@ -29,19 +23,19 @@ public class User {
         this.name = name;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public String getColor() {
         return color;
     }
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public ArrayList<Device> getDevices() {
+        return devices;
+    }
+
+    public void setDevices(ArrayList<Device> devices) {
+        this.devices = devices;
     }
 }
