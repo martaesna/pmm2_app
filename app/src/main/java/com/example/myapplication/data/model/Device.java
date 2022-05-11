@@ -1,10 +1,12 @@
 package com.example.myapplication.data.model;
 
 public class Device {
+    private int deviceID;
     private String id;
     private String objectName;
 
-    public Device(String id, String objectName) {
+    public Device(int deviceID, String id, String objectName) {
+        this.deviceID = deviceID;
         this.id = id;
         this.objectName = objectName;
     }
@@ -25,5 +27,13 @@ public class Device {
 
     public void setObjectName(String objectName) {
         this.objectName = objectName;
+    }
+
+    public int getDeviceID() {
+        return deviceID;
+    }
+
+    public void setDeviceID(int deviceID) {
+        this.deviceID = deviceID;
     }
 }

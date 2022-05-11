@@ -40,19 +40,23 @@ public class ChooseUserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chooseuser);
         binding = ActivityChooseuserBinding.inflate(getLayoutInflater());
 
-        String username = getIntent().getExtras().getString("username");
+        String account = getIntent().getExtras().getString("account");
+        int accountID = getIntent().getExtras().getInt("accountID");
+
+        Intent intent = new Intent(ChooseUserActivity.this, AddUserActivity.class);
 
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("accounts");
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot ds: snapshot.getChildren()) {
-                    Account account = ds.getValue(Account.class);
-                    assert account != null;
-                    if (account.getName().equals(username)) {
-                        users = account.getUsers();
+                    Account accountToFind = ds.getValue(Account.class);
+                    assert accountToFind != null;
+                    if (accountToFind.getName().equals(account)) {
+                        users = accountToFind.getUsers();
                     }
                 }
+                intent.putExtra("num_users", users.size());
                 for (User user: users) {
                     Button button = new Button(getApplicationContext());
                     button.setEnabled(true);
@@ -75,9 +79,9 @@ public class ChooseUserActivity extends AppCompatActivity {
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(ChooseUserActivity.this, MenuActivity.class);
-                            intent.putExtra("user_info", username + "/" + user.getName());
-                            ChooseUserActivity.this.startActivity(intent);
+                            Intent intentButton = new Intent(ChooseUserActivity.this, MenuActivity.class);
+                            intentButton.putExtra("user_info", account + "/" + user.getName());
+                            ChooseUserActivity.this.startActivity(intentButton);
                         }
                     });
 
@@ -96,8 +100,8 @@ public class ChooseUserActivity extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ChooseUserActivity.this, AddUserActivity.class);
-                intent.putExtra("account", username);
+                intent.putExtra("account", account);
+                intent.putExtra("accountID", accountID);
                 ChooseUserActivity.this.startActivity(intent);
             }
         });

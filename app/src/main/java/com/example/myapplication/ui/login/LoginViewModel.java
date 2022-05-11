@@ -79,7 +79,8 @@ public class LoginViewModel extends ViewModel {
                 for (int i = 0; i < accounts.size(); i++) {
                     if (accounts.get(i).getName().equals(username) && accounts.get(i).getPassword().equals(encrypt)) {
                         Intent intentMain = new Intent(loginActivity , ChooseUserActivity.class);
-                        intentMain.putExtra("username", username);
+                        intentMain.putExtra("account", username);
+                        intentMain.putExtra("accountID", i);
                         loginActivity.startActivity(intentMain);
                         loggedIn = true;
                     }

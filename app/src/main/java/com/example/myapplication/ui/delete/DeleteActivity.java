@@ -59,10 +59,13 @@ public class DeleteActivity extends AppCompatActivity {
                     Account accountToFind = ds.getValue(Account.class);
                     assert accountToFind != null;
                     if (accountToFind.getName().equals(account)) {
-                        for (User user: accountToFind.getUsers()) {
-                            if (user.getName().equals(username)) {
-                                for (Device device: user.getDevices()) {
-                                    devices.add(device.getObjectName());
+                        getIntent().putExtra("accountID", accountToFind.getAccountID());
+                        for (int i = 0; i < accountToFind.getUsers().size(); i++) {
+                            if (accountToFind.getUsers().get(i).getName().equals(username)) {
+                                getIntent().putExtra("userID", i);
+                                for (int j = 0; j < accountToFind.getUsers().get(i).getDevices().size(); j++) {
+                                    devices.add(accountToFind.getUsers().get(i).getDevices().get(j).getObjectName());
+                                    getIntent().putExtra(accountToFind.getUsers().get(i).getDevices().get(j).getObjectName(), j);
                                 }
                                 Spinner spinnerDevices = findViewById(R.id.spinner_devices2);
 
@@ -97,10 +100,16 @@ public class DeleteActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Spinner spinnerDevices = findViewById(R.id.spinner_devices2);
                 String deviceToDelete = spinnerDevices.getSelectedItem().toString();
-                Task<Void> mDatabase = FirebaseDatabase.getInstance().getReference("accounts").child(account).child(username).child(deviceToDelete).removeValue();
+                int deviceID = getIntent().getExtras().getInt(deviceToDelete);
+                int userID = getIntent().getExtras().getInt("userID");
+                int accountID = getIntent().getExtras().getInt("accountID");
+                Task<Void> mDatabase = FirebaseDatabase.getInstance().getReference("accounts").child(String.valueOf(accountID)).child("users").child(String.valueOf(userID)).child("devices").child(String.valueOf(deviceID)).removeValue();
+
+               // Task<Void> mDatabase = FirebaseDatabase.getInstance().getReference("accounts").child(String.valueOf(accountID)).get("users").child(String.valueOf(userID)).child(String.valueOf(deviceID)).removeValue();
                 Toast.makeText(getApplicationContext(), "Eliminat correctament", Toast.LENGTH_LONG).show();
                 DeleteActivity.this.startActivity(new Intent(DeleteActivity.this, MenuActivity.class));
             }
+
         });
     }
 }

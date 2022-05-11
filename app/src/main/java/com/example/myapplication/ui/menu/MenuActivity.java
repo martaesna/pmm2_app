@@ -18,6 +18,9 @@ import com.example.myapplication.ui.configuration.ConfigurationActivity;
 import com.example.myapplication.ui.delete.DeleteActivity;
 import com.example.myapplication.ui.edit.EditActivity;
 import com.example.myapplication.ui.login.LoginActivity;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MenuActivity extends AppCompatActivity {
     private ActivityMenuBinding binding;
@@ -30,7 +33,6 @@ public class MenuActivity extends AppCompatActivity {
         binding = ActivityMenuBinding.inflate(getLayoutInflater());
 
         String info = getIntent().getExtras().getString("user_info");
-
 
 
         final Button exitButton = findViewById(R.id.sortir);
@@ -76,18 +78,12 @@ public class MenuActivity extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Task<Void> mDatabase = FirebaseDatabase.getInstance().getReference("data").child("startListening").setValue(true);
                 Intent intent = new Intent(MenuActivity.this, AddActivity.class);
                 intent.putExtra("user_info", info);
                 MenuActivity.this.startActivity(intent);
             }
         });
 
-    }
-
-    public static class MyClickListener2 implements View.OnClickListener {
-        @Override
-        public void onClick(View v) {
-            //do something
-        }
     }
 }
