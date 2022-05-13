@@ -44,10 +44,17 @@ public class AddActivity extends AppCompatActivity {
         final Button exitButton = findViewById(R.id.sortir4);
         final Button addButton = findViewById(R.id.addButton);
 
+        String info = getIntent().getExtras().getString("user_info");
+        String[] user_info = info.split("/");
+        String account = user_info[0];
+        String username = user_info[1];
+
 
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(AddActivity.this, MenuActivity.class);
+                intent.putExtra("user_info", info);
                 AddActivity.this.startActivity(new Intent(AddActivity.this, MenuActivity.class));
             }
         });
@@ -55,7 +62,9 @@ public class AddActivity extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(AddActivity.this, MenuActivity.class);
+                intent.putExtra("user_info", info);
+                AddActivity.this.startActivity(new Intent(AddActivity.this, MenuActivity.class));
             }
         });
 

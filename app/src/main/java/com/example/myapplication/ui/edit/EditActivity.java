@@ -100,6 +100,7 @@ public class EditActivity extends AppCompatActivity {
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //TODO: CANVIAR VALOR BBDD
                 Toast.makeText(getApplicationContext(), "Editat correctament", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(EditActivity.this, MenuActivity.class);
                 intent.putExtra("user_info", info);

@@ -6,6 +6,7 @@ public class User {
     private int userID;
     private String name;
     private String color;
+    private int numDevices;
     private ArrayList<Device> devices;
 
     public User(int userID, String name, String color, ArrayList<Device> devices) {
@@ -53,5 +54,13 @@ public class User {
 
     public void setUserID(int userID) {
         this.userID = userID;
+    }
+
+    public int getNumDevices() {
+        return numDevices;
+    }
+
+    public void setNumDevices(int numDevices) {
+        this.numDevices = numDevices;
     }
 }

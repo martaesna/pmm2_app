@@ -94,18 +94,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <Spinner
-        android:id="@+id/spinner_colors"
-        android:layout_width="295dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="280dp"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
     <EditText
         android:id="@+id/userToAdd"
         android:layout_width="300dp"
@@ -161,6 +149,7 @@
         tools:ignore="MissingConstraints">
 
         <Spinner
+            android:id="@+id/spinner_colors"
             android:layout_width="350dp"
             android:layout_height="51dp"
             android:background="@drawable/rectangle_login_textedit"
@@ -172,13 +161,6 @@
             android:selectAllOnFocus="true"
             android:textSize="25sp" />
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/down_arrow_outline"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
 

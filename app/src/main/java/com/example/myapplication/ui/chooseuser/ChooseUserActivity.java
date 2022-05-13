@@ -67,6 +67,8 @@ public class ChooseUserActivity extends AppCompatActivity {
                     button.setTextSize(24);
                     if (color != Color.WHITE) {
                         button.setTextColor(Color.WHITE);
+                    } else {
+                        button.setTextColor(Color.BLACK);
                     }
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                             ViewGroup.LayoutParams.WRAP_CONTENT,
@@ -97,9 +99,11 @@ public class ChooseUserActivity extends AppCompatActivity {
         });
 
         Button addButton = findViewById(R.id.addNewUserButton);
+        addButton.setEnabled(true);
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                addButton.setEnabled(false);
                 intent.putExtra("account", account);
                 intent.putExtra("accountID", accountID);
                 ChooseUserActivity.this.startActivity(intent);

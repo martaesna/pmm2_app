@@ -1,4 +1,61 @@
 <resources>
+    <string-array name="color_array">
+        <item>BLAU</item>
+        <item>VERMELL</item>
+        <item>TARONJA</item>
+        <item>GROC</item>
+        <item>LILA</item>
+        <item>GRIS</item>
+        <item>ROSA</item>
+        <item>VERD</item>
+        <item>CIAN</item>
+        <item>MARRÓ</item>
+        <item>BLANC</item>
+        <item>NEGRE</item>
+    </string-array>
+    <string-array name="color_array_esp">
+        <item>AZUL</item>
+        <item>ROJO</item>
+        <item>NARANJA</item>
+        <item>AMARILLO</item>
+        <item>LILA</item>
+        <item>GRIS</item>
+        <item>ROSA</item>
+        <item>VERDE</item>
+        <item>CIAN</item>
+        <item>MARRÓN</item>
+        <item>BLANCO</item>
+        <item>NEGRO</item>
+    </string-array>
+    <string-array name="color_array_eng">
+        <item>BLUE</item>
+        <item>RED</item>
+        <item>ORANGE</item>
+        <item>YELLOW</item>
+        <item>PURPLE</item>
+        <item>GREY</item>
+        <item>PINK</item>
+        <item>GREEN</item>
+        <item>CYAN</item>
+        <item>BROWN</item>
+        <item>WHITE</item>
+        <item>BLACK</item>
+    </string-array>
+
+    <string name="purple">#FFBB86FC</string>
+    <string name="black">#000000</string>
+    <string name="red">#FF0000</string>
+    <string name="blue">#0035F4</string>
+    <string name="yellow">#DFF800</string>
+    <string name="green">#41F300</string>
+    <string name="white">#FFFFFFFF</string>
+    <string name="pink">#D65380</string>
+    <string name="grey">#686868</string>
+    <string name="cyan">#00BCD4</string>
+    <string name="brown">#77654B</string>
+    <string name="menu_orange">#F89501</string>
+
+    
     <string name="app_name">Leave with all</string>
     <!-- Strings related to login -->
     <string name="title">LEAVE WITH ALL</string>
@@ -50,6 +107,9 @@
     <string name="account">CANVIAR CONTRASENYA</string>
     <string name="user">TRIAR USUARI</string>
     <string name="help">AJUDA</string>
+
+    <string name="si">SI</string>
+    <string name="cancelar">Cancel·lar</string>
 
     <!-- Strings related to add user, edit account and edit profile -->
     <string name="new_user">Nou usuari</string>
