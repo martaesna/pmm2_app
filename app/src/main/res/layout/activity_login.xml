@@ -49,6 +49,18 @@
         android:src="@drawable/img_inglesa"
         android:layout_marginTop="20dp" />
 
+    <ImageButton
+        android:id="@+id/help"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginStart="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/help_icon"
+        android:layout_marginTop="20dp" />
+
 
     <TextView
         android:layout_width="120dp"

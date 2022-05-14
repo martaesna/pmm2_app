@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -19,9 +20,11 @@ import com.example.myapplication.data.model.Device;
 import com.example.myapplication.data.model.User;
 import com.example.myapplication.databinding.ActivityDeleteBinding;
 import com.example.myapplication.databinding.ActivityMenuBinding;
+import com.example.myapplication.ui.add.AddActivity;
 import com.example.myapplication.ui.configuration.ConfigurationActivity;
 import com.example.myapplication.ui.edit.EditActivity;
 import com.example.myapplication.ui.editaccount.EditAccountActivity;
+import com.example.myapplication.ui.help.HelpActivity;
 import com.example.myapplication.ui.menu.MenuActivity;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -50,6 +53,23 @@ public class DeleteActivity extends AppCompatActivity {
         String[] user_info = info.split("/");
         String account = user_info[0];
         String username = user_info[1];
+        int num_users = getIntent().getExtras().getInt("num_users");
+        int accountID = getIntent().getExtras().getInt("accountID");
+
+        ImageButton helpButton = findViewById(R.id.help);
+
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentButton = new Intent(DeleteActivity.this, HelpActivity.class);
+                intentButton.putExtra("num_users", num_users);
+                intentButton.putExtra("user_info", info);
+                intentButton.putExtra("account", account);
+                intentButton.putExtra("accountID", accountID);
+                intentButton.putExtra("back", "delete");
+                DeleteActivity.this.startActivity(intentButton);
+            }
+        });
 
         List<String> devices = new ArrayList<String>();
 
@@ -97,7 +117,10 @@ public class DeleteActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DeleteActivity.this, MenuActivity.class);
+                intent.putExtra("num_users", num_users);
                 intent.putExtra("user_info", info);
+                intent.putExtra("account", account);
+                intent.putExtra("accountID", accountID);
                 DeleteActivity.this.startActivity(intent);
             }
         });
@@ -121,7 +144,10 @@ public class DeleteActivity extends AppCompatActivity {
                                 Task<Void> mDatabase3 = FirebaseDatabase.getInstance().getReference("accounts").child(String.valueOf(accountID)).child("users").child(String.valueOf(userID)).child("numDevices").setValue(getIntent().getExtras().getInt("numDevices"));
                                 Toast.makeText(getApplicationContext(), "Eliminat correctament", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(DeleteActivity.this, MenuActivity.class);
+                                intent.putExtra("num_users", num_users);
                                 intent.putExtra("user_info", info);
+                                intent.putExtra("account", account);
+                                intent.putExtra("accountID", accountID);
                                 DeleteActivity.this.startActivity(intent);
                             }
 

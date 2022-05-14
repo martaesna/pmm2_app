@@ -23,6 +23,7 @@ import com.example.myapplication.ui.chooseuser.ChooseUserActivity;
 import com.example.myapplication.ui.configuration.ConfigurationActivity;
 import com.example.myapplication.ui.delete.DeleteActivity;
 import com.example.myapplication.ui.edit.EditActivity;
+import com.example.myapplication.ui.help.HelpActivity;
 import com.example.myapplication.ui.login.LoginActivity;
 import com.example.myapplication.ui.menu.MenuActivity;
 import com.google.firebase.database.DataSnapshot;
@@ -48,28 +49,49 @@ public class AddActivity extends AppCompatActivity {
         String[] user_info = info.split("/");
         String account = user_info[0];
         String username = user_info[1];
+        int num_users = getIntent().getExtras().getInt("num_users");
+        int accountID = getIntent().getExtras().getInt("accountID");
+
+        ImageButton helpButton = findViewById(R.id.help);
+
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentButton = new Intent(AddActivity.this, HelpActivity.class);
+                intentButton.putExtra("num_users", num_users);
+                intentButton.putExtra("user_info", info);
+                intentButton.putExtra("account", account);
+                intentButton.putExtra("accountID", accountID);
+                intentButton.putExtra("back", "add");
+                AddActivity.this.startActivity(intentButton);
+            }
+        });
 
 
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AddActivity.this, MenuActivity.class);
+                intent.putExtra("num_users", num_users);
                 intent.putExtra("user_info", info);
-                AddActivity.this.startActivity(new Intent(AddActivity.this, MenuActivity.class));
+                intent.putExtra("account", account);
+                intent.putExtra("accountID", accountID);
+                AddActivity.this.startActivity(intent);
             }
         });
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //TODO: add device to firebase
                 Intent intent = new Intent(AddActivity.this, MenuActivity.class);
+                intent.putExtra("num_users", num_users);
                 intent.putExtra("user_info", info);
-                AddActivity.this.startActivity(new Intent(AddActivity.this, MenuActivity.class));
+                intent.putExtra("account", account);
+                intent.putExtra("accountID", accountID);
+                AddActivity.this.startActivity(intent);
             }
         });
-
-
-
 
     }
 }

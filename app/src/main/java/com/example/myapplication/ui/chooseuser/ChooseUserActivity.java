@@ -7,6 +7,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
@@ -17,6 +18,7 @@ import com.example.myapplication.data.model.Account;
 import com.example.myapplication.data.model.User;
 import com.example.myapplication.databinding.ActivityChooseuserBinding;
 import com.example.myapplication.ui.adduser.AddUserActivity;
+import com.example.myapplication.ui.help.HelpActivity;
 import com.example.myapplication.ui.login.LoginActivity;
 import com.example.myapplication.ui.menu.MenuActivity;
 import com.google.firebase.database.DataSnapshot;
@@ -44,6 +46,19 @@ public class ChooseUserActivity extends AppCompatActivity {
         int accountID = getIntent().getExtras().getInt("accountID");
 
         Intent intent = new Intent(ChooseUserActivity.this, AddUserActivity.class);
+
+        ImageButton helpButton = findViewById(R.id.help);
+
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentButton = new Intent(ChooseUserActivity.this, HelpActivity.class);
+                intentButton.putExtra("account", account);
+                intentButton.putExtra("accountID", accountID);
+                intentButton.putExtra("back", "choose");
+                ChooseUserActivity.this.startActivity(intentButton);
+            }
+        });
 
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("accounts");
         mDatabase.addValueEventListener(new ValueEventListener() {
@@ -82,7 +97,10 @@ public class ChooseUserActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent intentButton = new Intent(ChooseUserActivity.this, MenuActivity.class);
+                            intentButton.putExtra("num_users", users.size());
                             intentButton.putExtra("user_info", account + "/" + user.getName());
+                            intentButton.putExtra("account", account);
+                            intentButton.putExtra("accountID", accountID);
                             ChooseUserActivity.this.startActivity(intentButton);
                         }
                     });
@@ -104,6 +122,7 @@ public class ChooseUserActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 addButton.setEnabled(false);
+                intent.putExtra("back", "choose");
                 intent.putExtra("account", account);
                 intent.putExtra("accountID", accountID);
                 ChooseUserActivity.this.startActivity(intent);

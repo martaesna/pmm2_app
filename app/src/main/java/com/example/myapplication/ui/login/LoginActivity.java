@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,8 @@ import android.widget.Toast;
 import com.example.myapplication.R;
 import com.example.myapplication.ui.chooseuser.ChooseUserActivity;
 import com.example.myapplication.databinding.ActivityLoginBinding;
+import com.example.myapplication.ui.help.HelpActivity;
+import com.example.myapplication.ui.menu.MenuActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -47,6 +50,17 @@ public class LoginActivity extends AppCompatActivity {
         final Button loginButton = binding.login;
         loginButton.setEnabled(true);
         final ProgressBar loadingProgressBar = binding.loading;
+
+        ImageButton helpButton = findViewById(R.id.help);
+
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentButton = new Intent(LoginActivity.this, HelpActivity.class);
+                intentButton.putExtra("back", "login");
+                LoginActivity.this.startActivity(intentButton);
+            }
+        });
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
@@ -84,36 +98,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        TextWatcher afterTextChangedListener = new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // ignore
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // ignore
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                loginViewModel.loginDataChanged(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
-            }
-        };
-        usernameEditText.addTextChangedListener(afterTextChangedListener);
-        passwordEditText.addTextChangedListener(afterTextChangedListener);
-        passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
-                    loginViewModel.login(usernameEditText.getText().toString(),
-                            passwordEditText.getText().toString(), LoginActivity.this);
-                }
-                return false;
-            }
-        });
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
