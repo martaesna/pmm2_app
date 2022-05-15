@@ -107,7 +107,7 @@
 
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/old_password"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="224dp"
@@ -120,7 +120,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
 
 
     <TextView
@@ -141,6 +142,7 @@
 
 
     <EditText
+        android:id="@+id/new_password"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="324dp"
@@ -153,7 +155,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
 
 
     <Button

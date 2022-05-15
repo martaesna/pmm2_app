@@ -50,45 +50,52 @@ public class LoginViewModel extends ViewModel {
     }
     public void readData(DatabaseReference reference, final OnGetDataListener listener, ArrayList<Account> accounts) {
         listener.onStart();
-        reference.addValueEventListener(new ValueEventListener() {
+        ValueEventListener valueEventListener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 listener.onSuccess(snapshot);
+                reference.removeEventListener(this);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 listener.onFailure();
             }
-        });
+        };
+        reference.addValueEventListener(valueEventListener);
     }
-    public void login(String username, String password, LoginActivity loginActivity) {
+    public void login(String username, String password, LoginActivity loginActivity, Intent intent) {
         // can be launched in a separate asynchronous job
         java.util.ArrayList<Account> accounts = new ArrayList<>();
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        String isLogin = intent.getExtras().getString("login");
         DatabaseReference reference = database.getReference("accounts");
         readData(reference, new OnGetDataListener() {
             @Override
             public void onSuccess(DataSnapshot dataSnapshot) {
                 boolean loggedIn = false;
-                for (DataSnapshot ds: dataSnapshot.getChildren()) {
-                    Account account = ds.getValue(Account.class);
-                    accounts.add(account);
-                }
-                String encrypt = DigestUtils.md5Hex(password);
-                for (int i = 0; i < accounts.size(); i++) {
-                    if (accounts.get(i).getName().equals(username) && accounts.get(i).getPassword().equals(encrypt)) {
-                        Intent intentMain = new Intent(loginActivity , ChooseUserActivity.class);
-                        intentMain.putExtra("account", username);
-                        intentMain.putExtra("accountID", i);
-                        loginActivity.startActivity(intentMain);
-                        loggedIn = true;
+                if (isLogin.equals("true")) {
+                    for (DataSnapshot ds: dataSnapshot.getChildren()) {
+                        Account account = ds.getValue(Account.class);
+                        accounts.add(account);
                     }
-                }
-                if (!loggedIn) {
-                    Intent intentMain = new Intent(loginActivity , LoginActivity.class);
-                    loginActivity.startActivity(intentMain);
-                    loginResult.setValue(new LoginResult(R.string.login_failed));
+                    String encrypt = DigestUtils.md5Hex(password);
+                    for (int i = 0; i < accounts.size(); i++) {
+                        if (accounts.get(i).getName().equals(username) && accounts.get(i).getPassword().equals(encrypt)) {
+                            Intent intentMain = new Intent(loginActivity , ChooseUserActivity.class);
+                            intentMain.putExtra("account", username);
+                            intentMain.putExtra("accountID", i);
+                            loginActivity.startActivity(intentMain);
+                            loggedIn = true;
+                            intent.removeExtra("login");
+                            intent.putExtra("login", "false");
+                        }
+                    }
+                    if (!loggedIn) {
+                        Intent intentMain = new Intent(loginActivity , LoginActivity.class);
+                        loginActivity.startActivity(intentMain);
+                        loginResult.setValue(new LoginResult(R.string.login_failed));
+                    }
                 }
             }
             @Override

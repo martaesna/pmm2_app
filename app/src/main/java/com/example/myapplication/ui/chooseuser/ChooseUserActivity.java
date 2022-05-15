@@ -61,7 +61,7 @@ public class ChooseUserActivity extends AppCompatActivity {
         });
 
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("accounts");
-        mDatabase.addValueEventListener(new ValueEventListener() {
+        ValueEventListener listener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot ds: snapshot.getChildren()) {
@@ -107,6 +107,8 @@ public class ChooseUserActivity extends AppCompatActivity {
 
                     LinearLayout ll = (LinearLayout)findViewById(R.id.chooseuserll);
                     ll.addView(button, params);
+
+                    mDatabase.removeEventListener(this);
                 }
             }
 
@@ -114,7 +116,8 @@ public class ChooseUserActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
                 throw error.toException();
             }
-        });
+        };
+        mDatabase.addValueEventListener(listener);
 
         Button addButton = findViewById(R.id.addNewUserButton);
         addButton.setEnabled(true);

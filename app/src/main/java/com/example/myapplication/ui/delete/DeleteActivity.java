@@ -168,7 +168,6 @@ public class DeleteActivity extends AppCompatActivity {
                                                                     Task<Void> mDatabase2 = FirebaseDatabase.getInstance().getReference("accounts").child(String.valueOf(accountID)).child("users").child(String.valueOf(userID)).child("devices").child(String.valueOf(device.getDeviceID())).removeValue();
                                                                     device.setDeviceID(device.getDeviceID() - 1);
                                                                     Task<Void> mDatabase = FirebaseDatabase.getInstance().getReference("accounts").child(String.valueOf(accountID)).child("users").child(String.valueOf(userID)).child("devices").child(String.valueOf(device.getDeviceID())).setValue(device);
-
                                                                 }
                                                             }
                                                         }
