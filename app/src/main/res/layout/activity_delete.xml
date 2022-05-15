@@ -47,18 +47,6 @@
         android:layout_marginTop="20dp" />
 
 
-    <ImageButton
-        android:id="@+id/help"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="?selectableItemBackgroundBorderless"
-        android:scaleType="fitXY"
-        android:layout_marginStart="15dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/help_icon_black"
-        android:layout_marginTop="20dp" />
-
     <TextView
         android:layout_width="300dp"
         android:layout_height="60dp"
@@ -108,6 +96,18 @@
         app:strokeWidth="2dp"
         tools:ignore="SmallSp" />
 
+    <ImageButton
+        android:id="@+id/help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/help_icon_black"
+        android:layout_marginTop="20dp" />
+
     <Button
         android:id="@+id/sortir3"
         android:layout_width="240dp"
@@ -139,6 +139,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="224dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:src="@drawable/down_arrow"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
