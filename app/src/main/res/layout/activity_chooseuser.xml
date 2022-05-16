@@ -85,7 +85,7 @@
         android:enabled="true"
         android:fontFamily="@font/futura_heavy"
         android:text="@string/button_adduser"
-        android:textSize="36sp"
+        android:textSize="20sp"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

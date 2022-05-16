@@ -75,7 +75,7 @@
     <string name="silvia_button">Silvia</string>
     <string name="laia_button">Laia</string>
     <string name="help_comment">En cas de tenir problemes, contacteu amb <b>help@mail.com</b></string>
-    <string name="hire_comment">Encara no disposa dels nostres serveis? Contracta\'ns! <b>leavewithall@mail.com</b></string>
+    <string name="hire_comment">No disposa dels nostres serveis o necessita ajuda? Contacta\'ns! <b>leavewithall@mail.com</b></string>
 
     <!-- Strings related to menu -->
     <string name="item">telèfon</string>
@@ -87,7 +87,7 @@
     <!-- Strings related to add,edit,delete -->
     <string name="title_add">AFEGIR DISPOSITIU</string>
     <string name="devices">DISPOSITIUS</string>
-    <string name="description">Acosti el dispositiu al lector, fins que s’encengui la llum verda</string>
+    <string name="description">Acosti el dispositiu al lector fins que s’apaguin les llums</string>
     <string name="button_add">AFEGIR</string>
     <string name="button_adduser">AFEGIR NOU USUARI</string>
     <string name="exit_button">SORTIR</string>
@@ -140,11 +140,7 @@
 
     <!-- Strings related to help -->
     <string name="title_help">AJUDA</string>
-    <string name="text_help">Si necessites ajuda amb l’aplicació o el desenvolupament de l’activitat del producte, no dubtis a contactar amb nosaltres trucant al
-<b>+34 696 634 466</b>
-o escrivint un correu electronic a
-<b>help@mail.com</b>.
-T’atendrem el més aviat possible.</string>
+    <string name="text_help">Necessites ajuda o vols contactar-nos?\n\nTelefon: <b>+34 696 634 466</b>\n\nEmail: <b>help@mail.com</b></string>
     <string name="m_bil">Telèfon</string>
     <string name="prompt_email">hola@hola.com</string>
 

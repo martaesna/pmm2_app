@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginEnd="200dp"
-        android:layout_marginBottom="348dp"
+        android:layout_marginBottom="356dp"
         android:fontFamily="@font/futura_medium"
         android:gravity="center"
         android:text="@string/description"
@@ -129,7 +129,7 @@
         android:layout_width="240dp"
         android:layout_height="71dp"
         android:layout_gravity="start"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="128dp"
         android:width="300dp"
         android:height="60dp"
         android:backgroundTint="@color/button_green"
@@ -163,6 +163,15 @@
         app:strokeColor="@color/white"
         app:strokeWidth="2dp"
         tools:ignore="SmallSp" />
+
+
+    <ImageView
+        android:layout_width="286dp"
+        android:layout_height="156dp"
+        android:src="@drawable/lector"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="487dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

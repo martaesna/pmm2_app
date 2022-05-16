@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -49,6 +50,9 @@ public class EditProfileActivity extends AppCompatActivity {
         int accountID = getIntent().getExtras().getInt("accountID");
 
         ImageButton helpButton = findViewById(R.id.help);
+        TextView profile = findViewById(R.id.username);
+        profile.setText(username);
+
 
         helpButton.setOnClickListener(new View.OnClickListener() {
             @Override
